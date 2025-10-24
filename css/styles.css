@@ -66,6 +66,7 @@ background: rgba(0,0,0,0.45);
 
 .hero-box {
 position: absolute;
+text-align: left;
 left: 160px;
 top: 100px;
 z-index: 2;
@@ -371,4 +372,5 @@ html, body {
     padding: 0;
     background: #ffffff;
   }
+
   
