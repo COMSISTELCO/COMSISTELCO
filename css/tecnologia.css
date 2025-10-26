@@ -1,0 +1,428 @@
+/* ========== RESET Y TIPOGRAFÍA ========== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+font-family: "Segoe UI", Arial, sans-serif;
+background: #e9ebee;
+color: #222;
+}
+
+/* ========== FONDO GENERAL ========== */
+.page-bg {
+background: #e9ebee;
+}
+
+/* ========== ESTRUCTURA PRINCIPAL ========== */
+.site-wrapper {
+    width: 100%;
+    margin: 0;
+    background: #ffffff;
+    box-shadow: none;
+    border: none;
+}
+
+
+/* ========== HEADER ========== */
+.site-header { background: #fff; }
+.header-inner {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 12px 160px;
+}
+.logo img { height: 45px; display: block; }
+
+.main-nav a {
+  color: #222;
+  text-decoration: none;
+  margin-left: 34px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.contact-btn {
+  padding: 8px 18px;
+  border-radius: 24px;
+  border: 1px solid rgba(0,0,0,0.15);
+}
+
+/* ========== HERO (BANNER) ========== */
+.hero {
+  background: #fff;
+  padding: 0;
+}
+
+.hero-image {
+  width: 100%;
+  height: 380px; /* Ajusta la altura según necesites */
+  position: relative;
+  /* ! REEMPLAZA 'url' CON LA RUTA DE TU IMAGEN O UNA IMAGEN SIMILAR ! */
+  background: url('../img/tecnoligia/tecnologia.jpeg') center center no-repeat; 
+  background-size: cover; /* Cambiado a 'cover' para mejor ajuste */
+  background-position: center 20%; /* Ajusta si es necesario */
+}
+
+.hero-dim {
+  position: absolute;
+  inset: 0;
+  /* Fondo con degradado y opacidad para el efecto oscuro en el lado izquierdo */
+  background: linear-gradient(to right, rgba(22, 21, 21, 0.728) 45%, rgba(0, 0, 0, 0.098) 75%, transparent 100%);
+}
+
+.hero-box {
+  position: absolute;
+  text-align: left;
+  left: 148px; /* Ajusta la posición izquierda del texto */
+  top: 30%; /* Centra verticalmente */
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 500px; /* Ajusta el ancho del contenedor de texto */
+  max-width: 90%;
+}
+
+.hero-box h1 {
+  font-size: 48px; /* Tamaño de la fuente para "NEWSLETTERS" */
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 10px;
+  padding: 0; /* Asegúrate de que no tenga padding extra */
+  color: #f1c40f;
+}
+
+.hero-box p {
+  font-size: 20px; 
+  line-height: 1.4;
+  font-weight: 400;
+  /* CAMBIO CLAVE: Justificar a ambos lados */
+  text-align: justify;
+  letter-spacing: -0.2px;
+  color: #fff;
+  position:absolute; 
+}
+
+
+
+/* ===== BANNERS CON IMAGENES ===== */
+.banners-advanced {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 20px;
+}
+
+/* ===== BANNER RECTANGULAR AVANZADO ===== */
+.banner-advanced {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 320px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.banner-advanced img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* MEJORAR NITIDEZ */
+image-rendering: auto;
+-webkit-optimize-contrast: crisp-edges;
+image-rendering: -moz-crisp-edges;
+image-rendering: -o-crisp-edges;
+image-rendering: pixelated;
+backface-visibility: hidden;
+transform: translateZ(0);
+}
+
+/* ===== QUITAMOS EL OVERLAY ===== */
+/* .overlay { display: none; } */
+
+/* ===== TEXTO SLIDE + FADE CON FONDO SEMITRANSPARENTE ===== */
+.texto {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  padding: 40px 30px;
+  color: #fff;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  opacity: 0;
+  transition: all 0.8s ease;
+
+  /* FONDO DEL TEXTO MÁS OSCURO PARA MEJOR VISIBILIDAD */
+  background: rgba(0, 0, 0, 0.6); /* antes estaba 0.35 */
+  border-radius: 10px;
+}
+
+
+/* Animación según impar/par */
+.texto.right-to-left {
+  left: 0;
+  transform: translateX(-50px);
+}
+
+.texto.left-to-right {
+  right: 0;
+  transform: translateX(50px);
+}
+
+.banner-advanced:hover .texto.right-to-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.banner-advanced:hover .texto.left-to-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ===== TIPOGRAFIA ===== */
+.texto h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #f1c40f;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
+}
+
+.texto p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1100px) {
+  .texto { width: 60%; padding: 30px; }
+}
+
+@media (max-width: 700px) {
+  .banner-advanced { height: 220px; }
+  .texto { width: 70%; padding: 20px; }
+  .texto h2 { font-size: 1.4rem; }
+  .texto p { font-size: 1rem; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== FOOTER ========== */
+.site-footer {
+  background: #142540;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+.footer-inner {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-left img { height: 45px; align-items: right; }
+.footer-links a {
+  color: #98b3d0;
+  text-decoration: none;
+  margin-right: 18px;
+  font-size: 14px;
+  display: inline-block;
+}
+.footer-right p {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.newsletter {
+  display: flex;
+  gap: 6px;
+}
+.newsletter input {
+  padding: 8px 10px;
+  border-radius: 3px;
+  border: none;
+  width: 220px;
+}
+.newsletter button {
+  background: #f1c40f;
+  color: #111;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 3px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1200px) {
+  .header-inner { padding: 22px 40px; }
+  .hero-box { left: 40px; top: 80px; width: 400px; }
+  .section-inner, .footer-inner { width: 90%; }
+}
+@media (max-width: 720px) {
+  .main-nav { display: none; }
+  .hero-image { height: 300px; }
+  .hero-box { top: 40px; left: 20px; width: calc(100% - 40px); }
+  .cards { flex-direction: column; }
+  .newsletter input { width: 160px; }
+}
+
+
+/* ========== AJUSTE GENERAL PARA PANTALLA COMPLETA ========== */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ffffff !important;
+  overflow-x: hidden;
+}
+.page-bg {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+/* =========================================================
+   🌍 OPTIMIZACIÓN UNIVERSAL (iPhone + Android)
+   ========================================================= */
+
+/* --- Texto y visualización más nítidos en móviles --- */
+html, body {
+  -webkit-text-size-adjust: 100%; /* Evita zoom automático en Safari */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent; /* Elimina el destello al tocar */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* --- Scroll suave en iOS (Safari) y Android --- */
+body, .scroll-area {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* --- Márgenes seguros en iPhone con notch --- */
+body {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+           env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+/* --- Asegura imágenes y videos fluidos --- */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Mejora respuesta táctil de botones/enlaces --- */
+button, a, input {
+  touch-action: manipulation;
+}
+
+/* --- Evita que el fondo del hero se deforme --- */
+.hero-image {
+  background-size: cover; /* antes era 100% 100% */
+}
+
+/* --- Previene zoom en inputs en Safari (min 16px) --- */
+.newsletter input {
+  font-size: 16px;
+}
+
+/* --- Ajustes extra para pantallas pequeñas (iPhone SE, Android compactos) --- */
+@media (max-width: 430px) {
+  .header-inner {
+    padding: 10px 12px;
+  }
+
+  .main-nav a {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .hero-box {
+    top: 50px;
+    width: 90%;
+    left: 5%;
+  }
+
+  .hero-box h1 {
+    font-size: 22px;
+  }
+
+  .cta {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .edu-title {
+    font-size: 1.6rem;
+  }
+
+  .edu-description {
+    font-size: 1rem;
+  }
+
+  .footer-inner {
+    padding: 20px 10px;
+  }
+
+  .newsletter input, .newsletter button {
+    font-size: 14px;
+  }
+}
