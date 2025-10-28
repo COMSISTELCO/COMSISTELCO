@@ -1,0 +1,502 @@
+/* =========================================================
+   RESET BÁSICO Y TIPOGRAFÍA
+   ========================================================= */
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed,
+   figure, figcaption, footer, header, hgroup,
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+       margin: 0;
+       padding: 0;
+       border: 0;
+       font-size: 100%;
+       font: inherit;
+       vertical-align: baseline;
+   }
+   
+   *, *::before, *::after {
+       box-sizing: border-box;
+   }
+   
+   body {
+       font-family: "Segoe UI", Arial, sans-serif;
+       background: #e9ebee;
+       color: #222;
+       -webkit-text-size-adjust: 100%;
+       -webkit-font-smoothing: antialiased;
+       text-rendering: optimizeLegibility;
+       -webkit-tap-highlight-color: transparent;
+       scroll-behavior: smooth;
+       overflow-x: hidden;
+       padding: env(safe-area-inset-top) env(safe-area-inset-right)
+                env(safe-area-inset-bottom) env(safe-area-inset-left);
+   }
+   
+   /* =========================================================
+      ESTRUCTURA GENERAL
+      ========================================================= */
+   .page-bg { background: #e9ebee; }
+   
+   .site-wrapper {
+       width: 100%;
+       margin: 0 auto;
+       background: #ffffff;
+   }
+   
+   .contenedor, .section-inner, .footer-inner {
+       width: 90%;
+       max-width: 1100px;
+       margin: 0 auto;
+   }
+   
+   /* =========================================================
+      HEADER
+      ========================================================= */
+   .site-header { background: #fff; }
+   
+   .header-inner {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 12px 160px;
+   }
+   
+   .logo img { height: 45px; display: block; }
+   
+   .main-nav a {
+       color: #222;
+       text-decoration: none;
+       margin-left: 34px;
+       font-weight: 500;
+       font-size: 15px;
+   }
+   
+   .contact-btn {
+       padding: 8px 18px;
+       border-radius: 24px;
+       border: 1px solid rgba(0,0,0,0.15);
+   }
+   
+   /* =========================================================
+      HERO / BANNER
+      ========================================================= */
+   .hero { background: #fff; padding: 0; }
+   
+   .hero-image {
+       width: 100%;
+       height: 380px;
+       position: relative;
+       background: url('../img/img1.jpg') center center no-repeat;
+       background-size: cover;
+   }
+   
+   .hero-dim {
+       position: absolute;
+       inset: 0;
+       background: rgba(0,0,0,0.45);
+   }
+   
+   .hero-box {
+       position: absolute;
+       left: 160px;
+       top: 100px;
+       width: 460px;
+       color: #fff;
+       z-index: 2;
+       text-align: left;
+   }
+   
+   .hero-box h1 {
+       font-size: 45px;
+       line-height: 1.1;
+       font-weight: 800;
+       margin-bottom: 20px;
+   }
+   
+   .cta {
+       display: inline-block;
+       background: #f1c40f;
+       color: #111;
+       padding: 12px 22px;
+       border-radius: 4px;
+       text-decoration: none;
+       font-weight: 700;
+       box-shadow: 0 1px 0 rgba(0,0,0,0.12);
+   }
+   
+/* =========================================================
+      SECCIÓN EDUCACIÓN
+  ========================================================= */
+      .edu-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 100px 20px;
+        background: linear-gradient(135deg, #ffffff 0%, #e6ecff 50%, #d3dbff 100%);
+    }
+    
+    .edu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        width: 100%;
+        gap: 60px;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 30, 90, 0.08);
+        padding: 60px;
+    }
+    
+    .edu-text { flex: 1; }
+    
+    .edu-tag {
+        color: #002B7A;
+        font-weight: 700;
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    
+    .edu-title {
+        color: #00134d;
+        font-size: 2.3rem;
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 25px;
+    }
+    
+    .edu-description {
+        color: #0a1a44;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        text-align: justify;
+        margin-bottom: 35px;
+    }
+    
+    .edu-btn {
+        background-color: #001f7a;
+        color: #fff;
+        padding: 12px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+    }
+    
+    .edu-btn:hover {
+        background-color: #fff;
+        color: #001f7a;
+        border: 2px solid #001f7a;
+    }
+    
+    .edu-image { flex: 1; display: flex; justify-content: center; align-items: center; }
+    
+    .edu-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+   /* =========================================================
+      SECCIÓN CLIENTES
+      ========================================================= */
+   .clientes {
+       padding: 50px 0;
+       background-color: #fff;
+       overflow: hidden;
+   }
+   
+   .clientes h2 {
+       font-size: 2rem;
+       color: #0a0a5a;
+       margin-bottom: 10px;
+       letter-spacing: 1px;
+       text-align: center;
+       font-weight: bold;
+   }
+   
+   .linea {
+       width: 100%;
+       max-width: 250px;
+       height: 3px;
+       background: #ffeb3b;
+       margin: 0 auto 40px auto;
+   }
+   
+   /* Carrusel clientes */
+   .slider {
+       position: relative;
+       width: 100%;
+       overflow: hidden;
+   }
+   
+   .slide-track {
+       display: flex;
+       align-items: center;
+       width: calc(250px * 14.8);
+       animation: scroll 70s linear infinite;
+   }
+   
+   .slide {
+       width: 300px;
+       flex-shrink: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .slide img {
+       width: 180px;
+       height: auto;
+       transition: transform 0.3s ease, filter 0.3s ease;
+   }
+   
+   .slide img:hover { transform: scale(1.1); }
+   
+   @keyframes scroll {
+       0% { transform: translateX(0); }
+       100% { transform: translateX(calc(-250px * 14.8)); }
+   }
+   
+   
+   
+   /* =========================================================
+      ESTADÍSTICAS
+      ========================================================= */
+   .estadisticas {
+       background: linear-gradient(90deg, #0a1a38, #132544, #0a1a38);
+       color: #ffffff;
+       text-align: center;
+       padding: 35px 0;
+   }
+   
+   .contenedor-estadisticas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.dato h2 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.dato p {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+
+   .contador::before {
+    content: "+";
+    font-size: 48px;
+    font-weight: 800;
+    margin-left: 3px;
+  }
+  
+   
+   /* =========================================================
+      SERVICIOS
+      ========================================================= */
+   .services {
+       max-width: 1100px;
+       margin: 30px auto;
+       text-align: center;
+   }
+   
+   .linea2 {
+    width: 100%;
+    max-width: 250px;
+    height: 3px;
+    background: #ffeb3b;
+    margin: 0 auto 40px auto;
+   }
+   
+   .services h2 {
+       color: #0a0a5a;
+       font-size: 2rem;
+       margin-bottom: 10px;
+       font-weight: bold;
+   }
+   
+   .cards {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+       gap: 25px;
+   }
+   
+   .card {
+       background: #ffffff;
+       padding: 20px;
+       border-radius: 12px;
+       box-shadow: 0 4px 10px rgba(1, 17, 122, 0.5);
+       transition: transform 0.3s, box-shadow 0.3s;
+       text-decoration: none;
+       color: inherit;
+   }
+   
+   .card:hover {
+       transform: translateY(-8px);
+       box-shadow: 0 6px 15px rgba(1, 17, 122, 0.5);
+   }
+   
+   .card h3 { color: #070402; font-weight: bold; }
+   
+   .card p { color: #070402; }
+
+   /* =========================================================
+      PREMIOS
+      ========================================================= */
+   .premios {
+       padding: 50px 0;
+       background-color: #fff;
+       text-align: center;
+       overflow: hidden;
+   }
+   
+   .premios h2 {
+       font-size: 2rem;
+       color: #0a0a5a;
+       margin-bottom: 10px;
+       font-weight: bold;
+   }
+   
+   .premios .linea {
+    width: 100%;
+    max-width: 250px;
+    height: 3px;
+    background: #ffeb3b;
+    margin: 0 auto 40px auto;
+   }
+   
+   .premios-slider {
+       width: 100%;
+       overflow: hidden;
+       position: relative;
+   }
+   
+   .premios-track {
+       display: flex;
+       gap: 30px;
+       animation: scrollPremios 20s linear infinite;
+   }
+   
+   .premio {
+       flex: 0 0 calc(70.5% / 2);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .premio img {
+       width: 300px;
+       height: 180px;
+       object-fit: contain;
+       border-radius: 12px;
+       background: #fff;
+       box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+       transition: transform 0.35s ease, box-shadow 0.35s ease;
+   }
+   
+   .premio img:hover {
+       transform: scale(1.09);
+       box-shadow: 0px 10px 25px rgba(0,0,0,0.22);
+   }
+   
+   @keyframes scrollPremios {
+       0% { transform: translateX(calc(-50%)); }
+       100% { transform: translateX(0); }
+   }
+   
+   /* =========================================================
+      FOOTER
+      ========================================================= */
+   .site-footer {
+       background: #142540;
+       color: #fff;
+       padding: 20px 0;
+       margin-top: 40px;
+   }
+   
+   .footer-inner {
+       width: 85%;
+       max-width: 1100px;
+       margin: 0 auto;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   
+   .footer-left img { height: 45px; }
+   
+   .footer-links a {
+       color: #98b3d0;
+       text-decoration: none;
+       margin-right: 18px;
+       font-size: 14px;
+   }
+   
+   .footer-right p { font-weight: 700; margin-bottom: 8px; }
+   
+   .newsletter {
+       display: flex;
+       gap: 6px;
+   }
+   
+   .newsletter input {
+       padding: 8px 10px;
+       border-radius: 3px;
+       border: none;
+       width: 220px;
+       font-size: 16px;
+   }
+   
+   .newsletter button {
+       background: #f1c40f;
+       color: #111;
+       padding: 8px 14px;
+       border: none;
+       border-radius: 3px;
+       font-weight: 700;
+       cursor: pointer;
+   }
+   
+   /* =========================================================
+      RESPONSIVE GENERAL
+      ========================================================= */
+   @media (max-width: 1200px) {
+       .header-inner { padding: 22px 40px; }
+       .hero-box { left: 40px; top: 80px; width: 400px; }
+   }
+   
+   @media (max-width: 992px) {
+       .edu-container { flex-direction: column; text-align: center; padding: 40px 30px; }
+       .edu-title { font-size: 1.9rem; }
+       .edu-image img { width: 90%; margin-top: 20px; }
+       .slide-track, .premios-track { animation-duration: 100s; }
+   }
+   
+   @media (max-width: 768px) {
+       .header-inner { flex-direction: column; align-items: flex-start; }
+       .main-nav { margin-top: 10px; }
+       .cards { grid-template-columns: 1fr; gap: 20px; }
+   }
+   
