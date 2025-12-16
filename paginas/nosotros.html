@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+  <title>Nosotros - COMSISTELCO</title>
+  <link rel="stylesheet" href="../css/nosotros.css" />
+  <link rel="icon" type="image/png" href="../img/Minilogo.png">
+</head>
+<body>
+
+<!-- CONTENEDOR GENERAL -->
+<header class="header">
+  <div class="header-container">
+    <!-- LOGO -->
+    <div class="header-logo">
+      <img src="../img/Logo.png" alt="Logo COMSISTELCO">
+    </div>
+
+   <!-- MENÚ PRINCIPAL -->
+   <nav class="header-nav" id="header-nav">
+    <a href="../index.html" class="active">Inicio</a>
+    <a href="../paginas/servicios.html">Servicios</a>
+    <a href="../paginas/newsletters.html">Newsletters</a>
+  </nav>
+
+    <!-- BOTÓN DE ACCIÓN -->
+    <a href="#" class="header-btn">Contactanos</a>
+
+    <!-- MENÚ MÓVIL -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<script src="../../js/menumovil.js"></script>
+
+
+ <!-- HERO -->
+ <section class="hero">
+  <div class="hero-image">
+    <div class="hero-dim"></div>
+
+    <!-- Nuevo contenedor con la misma anchura y padding que .header-container -->
+    <div class="hero-content">
+      <div class="hero-box">
+        <h1>NOSOTROS</h1>
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- carrucel (imagen izquierda y derecha) -->
+
+<section class="about-sections">
+
+  <!-- QUIENES SOMOS -->
+  <div class="about-block">
+      <div class="about-img">
+          <img src="../img/nosotros/COMSISTELCO.png" alt="Quienes Somos">
+      </div>
+      <div class="about-text">
+          <h2>QUIÉNES SOMOS</h2>
+          <div class="linea"></div>
+          <p>
+              Con más de 30 años de experiencia, somos pioneros en la integración de infraestructura
+              tecnológica. Nos especializamos en resolver necesidades de manera específica, 
+              adaptándonos a las exigencias particulares de cada uno de nuestros cliente.
+          </p>
+      </div>
+  </div>
+
+  <!-- COMPROMISO -->
+  <div class="about-block reverse">
+      <div class="about-img">
+          <img src="../img/nosotros/compromiso.png" alt="Compromiso">
+      </div>
+      <div class="about-text">
+          <h2>COMPROMISO</h2>
+          <div class="linea"></div>
+
+          <p>Nuestro compromiso con la calidad y la gestión se manifiesta en
+            cada uno de nuestros servicios. Nos especializamos en ofrecer
+            soluciones integrales en infraestructura tecnológica, consultoría,
+            tecnología avanzada y ciberseguridad. Nuestra misión es brindar
+            a nuestros clientes las herramientas y el soporte necesarios para
+            alcanzar el éxito en un mundo cada vez más digitalizado y conectado.
+          </p>
+      </div>
+  </div>
+
+  <!-- EXCELENCIA -->
+  <div class="about-block">
+      <div class="about-img">
+          <img src="../img/nosotros/excelencia.png" alt="Excelencia">
+      </div>
+      <div class="about-text">
+          <h2>EXCELENCIA</h2>
+          <div class="linea"></div>
+          <p>
+            En Comsistelco SAS, la innovación y la seguridad son nuestros pilares fundamentales.
+            Trabajamos con estándares internacionales para asegurar que cada proyecto no solo cumpla, 
+            sino que exceda las expectativas de nuestros clientes. Nos esforzamos por mantenernos a la 
+            vanguardia de la industria tecnológica, adaptándonos y evolucionando continuamente para ofrecer 
+            servicios que marquen la diferencia.
+          </p>
+      </div>
+  </div>
+
+</section>
+
+<!-- MISION Y VISION -->
+<section class="banner-mision">
+  <div class="contenido">
+      <h2>MISIÓN Y VISIÓN</h2>
+      <button class="btn-ver" onclick="abrirModalMyV()">VER</button>
+  </div>
+</section>
+
+<!-- MODAL RECTANGULAR MYV -->
+<div id="modal-myv" class="modal-overlay-myv" style="display:none;">
+    <div class="modal-rectangular-myv">
+
+        <!-- BOTÓN CERRAR -->
+        <button class="cerrar-rectangular-myv" onclick="cerrarModalMyV()">&times;</button>
+
+        <!-- IMAGEN ADAPTABLE -->
+        <img id="imgMyV" src="" alt="Imagen Misión y Visión">
+    </div>
+</div>
+
+
+
+<script src="../js/myv.js"></script>
+
+
+<!-- PROPUESTA VALOR -->
+<!-- CARRUSEL CUADRADO CON TEXTO -->
+<section class="about-sections">
+
+  <!-- TÍTULO DE LA SECCIÓN -->
+  
+  <div class="about-block">
+      <!-- CARRUSEL IMÁGENES CUADRADO -->
+      <div class="about-img carousel">
+          <img src="../img/nosotros/porpuvalor/cumplimiento.png" alt="Cumplimiento" class="slide-active">
+          <img src="../img/nosotros/porpuvalor/ctecnica.jpg" alt="Capacidad tecnica">
+          <img src="../img/nosotros/porpuvalor/ctecnologia.jpg" alt="Capacidad tecnologica">
+          <img src="../img/nosotros/porpuvalor/precio.png" alt="precio">
+      </div>
+
+      <!-- TEXTO A LA DERECHA -->
+      <div class="about-text">
+        <div class="section-title">
+          <h2>PROPUESTA VALOR</h2>
+          <div class="linea"></div>
+      </div>
+          <p>
+            Ofrecemos soluciones tecnológicas y de infraestructura que optimizan las operaciones de su empresa, implementadas bajo un método de gestión de proyectos que aseguran la integración de capacidad técnica y tecnológica, cumpliendo con el alcance de sus servicios a un precio competitivo.
+          </p>
+      </div>
+  </div>
+
+  
+</section>
+
+<script src="../js/propuvalor.js"></script>
+
+
+
+<!-- CERTIFICACIONES ISO -->
+
+  <div class="banner-certificacion">
+    <h2 class="titulo-certificacion">CERTIFICACIONES</h2>
+    <button class="btn-abrir-certificacion" id="btnAbrir-certificacion">VER</button>
+</div>
+
+  <!-- Modal Circular -->
+  <div id="modal-certificacion" class="modal-overlay-certificacion" style="display:none;">
+    <div class="modal-circular-certificacion">
+      <button class="cerrar-circular-certificacion" id="btnCerrar-certificacion">&times;</button>
+      <img id="imagenModalCertificacion" src="/img/nosotros/certificaciones/certificacion.png" alt="Imagen">
+    </div>
+  </div>
+
+<script src="../js/certificaciones.js"></script>
+
+
+   <!-- CARRUSEL ALIADOS -->
+   <section class="clientes" aria-label="Nuestros clientes">
+    <div class="contenedor">
+      <h2>NUESTROS ALIADOS</h2>
+      <div class="linea"></div>
+
+      <div class="slider" role="list">
+        <div class="slide-track">
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/aranda.jpg" alt="aranda" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/aruba.png" alt="aruba" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/aws.png" alt="aws" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/azure.png" alt="azure" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/cisco.png" alt="cisco" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/commscope.png" alt="commscope" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/dell.png" alt="dell" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/google.png" alt="google" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/hp.png" alt="hp" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/hpe.png" alt="hp enterprise" loading="lazy"></div>
+
+          <!-- Duplicación para loop -->
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/huawei.png" alt="huawei" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/ivanti.png" alt="ivanti" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/legran.png" alt="legran" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/lenovo.png" alt="lenovo" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/panduit.png" alt="panduit" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/schneider.png" alt="schneider" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/siemon.png" alt="siemon" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/solarwinds.png" alt="solarwinds" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/tripplite.png" alt="tripplite" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/vertiv.png" alt="vertiv" loading="lazy"></div>
+          <div class="slide" role="listitem"><img src="../img/nosotros/aliados/vmware.png" alt="vmware" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+
+   <!-- LOGO + DESCRIPCIÓN -->
+<div class="footer-col footer-brand">
+
+  <img src="../img/Logo blanco.png" alt="COMSISTELCO" class="footer-logo">
+
+  <p>
+    En COMSISTELCO S.A.S impulsamos soluciones en telecomunicaciones, soporte técnico y redes corporativas para fortalecer la tecnología de su empresa.
+  </p>
+
+  <!-- ÍCONOS REDES SOCIALES -->
+  <div class="footer-social">
+    <a href="https://linkedin.com" target="_blank" class="linkedin">
+        <i class="social-icon linkedin"></i>
+    </a>
+
+    <a href="https://facebook.com" target="_blank" class="facebook">
+        <i class="social-icon facebook"></i>
+    </a>
+
+    <a href="https://instagram.com" target="_blank" class="instagram">
+        <i class="social-icon instagram"></i>
+    </a>
+
+    <a href="https://youtube.com" target="_blank" class="youtube">
+        <i class="social-icon youtube"></i>
+    </a>
+</div>
+
+
+</div>
+
+
+      <!-- ACCESO RÁPIDO -->
+      <div class="footer-col footer-accesos">
+          <h3>Acceso rápido</h3>
+          <ul>
+              <li><a href="#">¿Quiénes somos?</a></li>
+              <li><a href="#">Trabaja con nosotros</a></li>
+              <li><a href="#">Soluciones TIC</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Newsletters</a></li>
+          </ul>
+      </div>
+
+      <!-- SERVICIOS -->
+      <div class="footer-col footer-servicios">
+          <h3>Servicios</h3>
+          <ul>
+              <li><a href="#">Instalación y cableado estructurado</a></li>
+              <li><a href="#">Soporte técnico empresarial</a></li>
+              <li><a href="#">NOC & monitoreo</a></li>
+              <li><a href="#">Telefonía & PBX</a></li>
+              <li><a href="#">Consultoría en redes</a></li>
+          </ul>
+      </div>
+
+      <!-- CONTACTO + MAPA -->
+      <div class="footer-col footer-contact">
+          <h3>Contáctanos</h3>
+
+          <p>
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlemaps.svg" alt="">
+              Cra 20c # 75 a 27 – Bogotá, Colombia
+          </p>
+
+          <p>
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/phone.svg" alt="">
+              601-7436643
+          </p>
+
+          <p>
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="">
+              auxcomercial@comsistelco.com
+          </p>
+
+          <div class="footer-map">
+              <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6019456385916!2d-74.06527818913173!3d4.664844795290468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a58595750ed%3A0xded4e25c7c941b44!2scomsistelco!5e0!3m2!1ses!2sco!4v1764808865319!5m2!1ses!2sco"
+                  allowfullscreen=""
+                  loading="lazy">
+              </iframe>
+          </div>
+
+      </div>
+
+  </div>
+
+  <div class="footer-bottom">
+      © 2025 COMSISTELCO S.A.S – Todos los derechos reservados
+  </div>
+</footer>
