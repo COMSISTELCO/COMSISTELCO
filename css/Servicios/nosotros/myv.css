@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* FRANJA IZQUIERDA */
+.left-bar {
+    width: 110px;
+    background: white;
+    position: relative;
+    flex-shrink: 0;
+    overflow: visible;
+}
+
+/* IMAGEN VERTICAL */
+.vertical-image {
+    position: absolute;
+    top: 50%;
+    left: -142px;
+    transform: translateY(-50%) rotate(-90deg);
+    width: 390px;
+    height: auto;
+}
+
+/* PANEL DE IMAGEN CENTRAL */
+.image-panel {
+    flex: 0 0 38%;
+    background-image: url('../../../img/nosotros/myv/myv/myv.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+/* PANEL DERECHO (TEXTO) */
+.right-panel {
+    width: 55%;
+    padding: -10px 60px;
+}
+
+/* SECCIONES */
+.section {
+    margin-bottom: 80px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+/* TITULOS */
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1d3557;
+    text-align: center;
+}
+
+/* TEXTOS */
+.text-block p {
+    color: #000;
+    font-size: 19px;
+    line-height: 1.5;
+    max-width: 430px;
+    letter-spacing: -0.7px;
+    word-spacing: -2px;
+    text-align: justify;
+}
+
+/* Ajuste especial para misión */
+.mission-section {
+    margin-top: 40px;
+}
