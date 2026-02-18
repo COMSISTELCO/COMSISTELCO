@@ -1,7 +1,7 @@
 const btn = document.getElementById('toggleVideoBtn');
 const container = document.getElementById('videoContainer');
 const iframe = document.getElementById('ytIframe');
-const videoSrc = "https://www.youtube.com/embed/KyFScU_-t6c?si=ctoOC44gkxzg3FmT";
+const videoSrc = "https://www.youtube.com/watch?v=KyFScU_-t6c";
 
 btn.addEventListener('click', () => {
     if(container.classList.contains('show-video')) {
@@ -14,5 +14,6 @@ btn.addEventListener('click', () => {
         iframe.src = videoSrc + "?autoplay=1&mute=1"; // autoplay al mostrar
     }
 });
+
 
 
