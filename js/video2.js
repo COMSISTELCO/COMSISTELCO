@@ -14,7 +14,3 @@ btn.addEventListener('click', () => {
         iframe.src = videoSrc + "?autoplay=1&mute=1&rel=0";
     }
 });
-
-
-
-
